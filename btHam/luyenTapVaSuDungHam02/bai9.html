@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,
+        kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. Nếu có trả về số lần xuất hiện của ký tự đó,
+        nếu không trả về -1. </title>
+</head>
+<body>
+</body>
+<script>
+    function kiemtraMang(arr,n) {
+        if(arr.length ===0){
+            document.write("Mang rong")
+        }else{
+            let count =0
+            for (let i = 0; i <arr.length ; i++) {
+                if(arr[i] === n){
+                    count++
+                }
+            }
+            if(count ===0){
+                return -1
+            } else {
+                return count
+            }
+        }
+    }
+    let n = +prompt("số lượng")
+    let arr =[]
+    for (let i = 0; i <n ; i++) {
+        arr[i] = +prompt()
+    }
+    let a = +prompt("số kiểm tra")
+    document.write(kiemtraMang(arr,a))
+
+</script>
+</html>

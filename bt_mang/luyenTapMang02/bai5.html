@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết một chương trình nhập vào 2 chuỗi,
+        sau đó kiểm tra xem hai chuỗi có giống nhau hay không.</title>
+</head>
+<body>
+<script>
+    // chuỗi 1
+    let arr = [];
+    for (let i = 0; i < 3; i++) {
+        arr[i] = prompt(" Nhập kí tự ở chuỗi 1")
+    }
+    let a = arr.toString()
+    // chuỗi 2
+    let arr2 = [];
+    for (let i = 0; i < 3; i++) {
+        arr2[i] = prompt("Nhập kí tự ở chuỗi 2")
+    }
+    let b = arr2.toString()
+    let dem =0;
+    if(a.length === b.length){
+        for (let i = 0; i <a.length;i++) {
+            if(a[i] === b[i]){
+                dem++;
+            }
+                }
+    } else {
+        document.write("Cần 2 mảng bằng nhau")
+    }
+    if(dem === a.length){
+        document.write("2 Chuỗi bằng nhau")
+    }else{
+        document.write(" Mảng Không giống nhau")
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="test()">Click </button><br>
+<label id="ab">0</label>
+<script>
+    var n =1;
+    function f(n) {
+        n++
+        return n
+    }
+
+    function test(){
+        n = f(n);
+        document.getElementById("ab").innerHTML = n;
+
+    }
+
+
+</script>
+</body>
+</html>

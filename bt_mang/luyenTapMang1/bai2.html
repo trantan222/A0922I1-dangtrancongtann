@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau.
+        Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó</title>
+</head>
+<body>
+<script>
+    let arr =[];
+    let j
+    let i
+
+    for (let i = 0; i <10 ; i++) {
+        arr[i] = +prompt()
+    }
+    for (let j = 0; j <10 ; j++) {
+        let max = arr[j];
+        if(arr[j] > max){
+            arr[j] = max
+        }
+    }
+    alert(arr[j] + "Index = "+j)
+</script>
+</body>
+</html>

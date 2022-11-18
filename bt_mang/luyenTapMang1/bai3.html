@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình khởi tạo mảng số nguyên.
+        Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng</title>
+</head>
+<body>
+<script>
+    // tạo mảng
+    let n = prompt('Nhập độ dài mảng')
+    let arr =[]
+    for (let i = 0; i <n ; i++) {
+        arr[i] = +prompt("Nhập Phần tử "+i)
+    }
+    document.write("Mảng = "+arr+"<br>")
+    // giá trị lớn nhất
+    let max
+    for (let i = 0; i <arr.length ; i++) {
+         max = arr[0]
+        if(arr[i]> max){
+            max = arr[i]
+        }
+    }
+    document.write(" Giá Trị lớn Nhất Là = "+max+"<br>")
+    // tính điểm trung bình
+    let diemTB
+    let Tong = 0
+    for ( let i = 0; i <arr.length ; i++) {
+         Tong  += arr[i]
+    }
+       diemTB = Tong/n
+    document.write("Điểm Trung Bình ="+diemTB)
+</script>
+</body>
+</html>
