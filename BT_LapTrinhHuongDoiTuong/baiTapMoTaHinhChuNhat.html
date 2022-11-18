@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+</body>
+<script>
+    class Rectangle{
+        constructor(dai,rong) {
+            this.dai = dai;
+            this.rong = rong;
+        }
+         getchieuDai(){
+            return this.chieuDai
+        }
+         getchieuRong(){
+            return this.chieuDai
+        }
+         setchieuRong(chieurong){
+             this.chieuRong = chieurong
+        }
+         setchieuDai(chieudai){
+             this.chieuDai = chieudai
+        }
+        getchuVi(){
+            return (this.chieuDai + this.chieuRong) * 2
+        }
+        getdienTich(){
+            return this.chieuDai * this.chieuRong
+        }
+
+    }
+    let hCN = new Rectangle(5,6)
+    hCN.setchieuRong(7);
+    hCN.setchieuDai(10);
+    document.write("chu vi"+hCN.getchuVi()+"<br>")
+    document.write("Diện tích "+hCN.getdienTich())
+</script>
+</html>

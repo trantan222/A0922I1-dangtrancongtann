@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+</body>
+<script>
+    class Temperature{
+        constructor(C) {
+            this.C = C;
+        }
+        getC(){
+            return this.C
+        }
+        setC(value){
+            this.C = value
+        }
+        getCtoF(){
+          return (this.C+32)*1.8
+        }
+        getCtoKelvin(){
+            return this.C + 273.15
+        }
+
+
+    }
+    let temperature = new Temperature(10);
+    temperature.setC(25);
+    document.write("Độ F = "+temperature.getCtoF()+" Độ Kelvin = "+temperature.getCtoKelvin())
+</script>
+</html>
